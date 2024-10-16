@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/characters-view', function () {
+    return view('index'); // Devuelve la vista 'characters.blade.php'
 });
+
