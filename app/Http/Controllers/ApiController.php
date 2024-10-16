@@ -53,6 +53,7 @@ class ApiController extends Controller
                 'id' => $character['id'],
                 'name' => $character['name'],
                 'description' => $character['description'],
+                'image' => $character['thumbnail']['path'].'.'.$character['thumbnail']['extension']
             ];
         }        
         Character::upsert($charactersToSave, ['id'], ['name', 'description']);
