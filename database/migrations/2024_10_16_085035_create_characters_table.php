@@ -15,6 +15,7 @@ return new class extends Migration
             $table->integer('id');
             $table->string('name');
             $table->longText('description');
+            $table->string('image');
             $table->timestamps();
         });
     }
